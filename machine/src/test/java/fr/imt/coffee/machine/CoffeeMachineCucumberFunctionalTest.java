@@ -1,4 +1,4 @@
-package machine;
+package fr.imt.coffee.machine;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -15,8 +15,6 @@ import org.junit.runner.RunWith;
         glue = "fr.imt.coffee.machine.cucumber.steps"
 )
 //Permet d'ignorer les tests fonctionnels de Cucumber
-//Ne lance pas la class CoffeeMachineFunctionalTest
-@Ignore
 public class CoffeeMachineCucumberFunctionalTest {
 
 }

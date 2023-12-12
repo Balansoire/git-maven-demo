@@ -1,4 +1,4 @@
-package machine;
+package fr.imt.coffee.machine;
 
 import fr.imt.coffee.machine.CoffeeMachine;
 import fr.imt.coffee.storage.type.CoffeeType;

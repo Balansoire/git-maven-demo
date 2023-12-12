@@ -19,6 +19,13 @@ public class BeanTank extends Tank{
     }
 
     public void increaseCoffeeVolumeInTank(double coffeeVolume, CoffeeType coffeeType){
+        if (this.beanCoffeeType != coffeeType){
+            throw new IllegalArgumentException("You can't mix two different types of coffee in the same tank");
+        } else if (coffeeVolume > this.getMaxVolume() - this.getActualVolume()){
+            throw new IllegalArgumentException("You can't put more coffee than the tank can contain");
+        } else if (coffeeVolume < 0){
+            throw new IllegalArgumentException("You can't put a negative volume of coffee");
+        }
         this.increaseVolumeInTank(coffeeVolume);
         this.beanCoffeeType = coffeeType;
     }

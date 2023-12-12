@@ -1,4 +1,4 @@
-package machine.cucumber.steps;
+package fr.imt.coffee.machine.cucumber.steps;
 
 import io.cucumber.java.en.And;
 
